@@ -455,7 +455,7 @@ export default function AdminPage() {
   const selectedUserProfile = profiles.find((p) => p.id === selectedUser);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 my-8 mx-auto max-w-7xl px-6 py-16">
       <div>
         <h1 className="text-2xl font-semibold tracking-tight text-slate-900">Admin Dashboard</h1>
         <p className="text-sm text-slate-600">Manage users, schedules, questions, and site settings.</p>
