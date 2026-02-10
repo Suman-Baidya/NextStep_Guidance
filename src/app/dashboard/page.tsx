@@ -313,7 +313,7 @@ export default function DashboardPage() {
   const progressPercentage = steps.length > 0 ? (completedSteps / steps.length) * 100 : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 my-8 mx-auto max-w-7xl px-6 py-16">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
