@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
 import { insforge } from '@/lib/insforge';
-import { motion, AnimatePresence, useInView, useSpring, useMotionValue } from 'framer-motion';
+import { motion, AnimatePresence, useInView, useSpring, useMotionValue, type Variants } from 'framer-motion';
 import { 
   CheckCircle2, ArrowRight, Star, ChevronDown, 
   Instagram, Facebook, Linkedin, Youtube, 
@@ -55,7 +55,7 @@ type SocialLink = { id: string; platform: string; url: string; icon_name: string
 type SiteConfig = { site_name: string; mobile_no: string | null; whatsapp_no: string | null; address: string | null; email: string | null };
 
 // --- Animations ---
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
