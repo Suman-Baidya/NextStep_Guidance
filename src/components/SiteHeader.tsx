@@ -82,22 +82,17 @@ export default function SiteHeader() {
           {/* Auth Buttons (Desktop) */}
           <div className="hidden md:flex items-center gap-4">
             <SignedIn>
-              <UserButton 
+              <UserButton
                 afterSignOutUrl="/"
-                appearance={{
-                  elements: {
-                    avatarBox: "h-9 w-9 border-2 border-slate-100 hover:border-blue-200 transition-all"
-                  }
-                }}
               />
             </SignedIn>
             <SignedOut>
-              <SignInButton mode="modal">
+              <SignInButton>
                 <button className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors px-2">
                   Sign in
                 </button>
               </SignInButton>
-              <SignUpButton mode="modal">
+              <SignUpButton>
                 <button className="flex items-center gap-2 rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 transition-all hover:shadow-lg hover:-translate-y-0.5">
                   Get Started <ChevronRight size={14} />
                 </button>
@@ -142,12 +137,12 @@ export default function SiteHeader() {
 
               <SignedOut>
                 <div className="flex flex-col gap-4 pt-4">
-                  <SignInButton mode="modal">
+                  <SignInButton>
                     <button className="w-full flex items-center justify-center gap-2 py-3 border border-slate-200 rounded-xl font-semibold text-slate-700 hover:bg-slate-50">
                       <LogIn size={18} /> Sign In
                     </button>
                   </SignInButton>
-                  <SignUpButton mode="modal">
+                  <SignUpButton>
                     <button className="w-full py-3 bg-blue-600 text-white rounded-xl font-bold shadow-lg shadow-blue-200">
                       Create Free Account
                     </button>
